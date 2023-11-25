@@ -168,9 +168,7 @@ def enemy_movement():
  
         #Enemy Image show
         enemy(enemyX[i], enemyY[i], i)
-def show_text(x, y, text):
-    text_surface = font.render(text, True, (255, 255, 255))
-    screen.blit(text_surface, (x, y))
+
 def bullet_collision():
     global total_enemies,enemyX,enemyY,bulletX,bulletY,bullet_state,score_value
     for i in range(total_enemies):
