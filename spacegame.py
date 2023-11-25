@@ -23,7 +23,7 @@ pygame.display.set_icon(icon)
 
 #score
 score_value=0
-font=pygame.font.Font('Lato-Black.ttf',32)
+font=pygame.font.Font('font/Lato-Black.ttf',32)
 
 textX=10
 textY=10
@@ -88,7 +88,7 @@ def isCollision(enemyX,enemyY,bulletX,bulletY):
         return False
     
 def game_over():
-    game_over_font = pygame.font.Font('ChrustyRock-ORLA.ttf', 64)
+    game_over_font = pygame.font.Font('font/ChrustyRock-ORLA.ttf', 64)
     game_over_text = game_over_font.render("GAME OVER", True, (255, 0, 0))
     screen.blit(game_over_text, (200, 250))
     pygame.display.update()  # Update the display before delay
