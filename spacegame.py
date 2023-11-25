@@ -97,7 +97,7 @@ def game_over():
 
 def player_enemy_collision(playerX, playerY, enemyX, enemyY):
     distance = math.sqrt(math.pow(playerX - enemyX, 2) + (math.pow(playerY - enemyY, 2)))
-    if distance < 7:
+    if distance < 27:
         return True
     else:
         return False
